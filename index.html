@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XyannWebsite</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">XyannWebsite</a>
+        <div id="toggle"></div>
+        <div id="nav">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="team">Team</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="script">Script</a></li>         
+                <li><a href="social">Social</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <section id="home">Home</section>
+    <section id="team">Team</section>
+    <section id="about">About</section>
+    <section id="script">Script</section>
+    <section id="social">Social</section>
+    
+    
+    <script>
+        const header = document.getElementById('header');
+        const toggle = document.getElementById('toggle');
+        const nav = document.getElementById('nav');
+        
+        document.onclicj = function(e){
+        if(e.target.id !== 'header' && e.target.id !== 'toggle' && e.target.id !== 'nav'){
+        toggle.classList.remove('active');
+        nav.classList.remove('active');
+        }
+        }
+        
+        
+        
+        toggle.onclick = function(){
+        toggle.classList.toggle('active')
+        nav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
